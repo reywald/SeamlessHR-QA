@@ -11,7 +11,7 @@ from secure_page import SecurePage
 class The_InternetTests(unittest.TestCase):
 
     def setUp(self) -> None:
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome(executable_path="./webdrivers/chromedriver.exe")
 
     def tearDown(self) -> None:
         self.driver.close()
